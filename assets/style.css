@@ -102,18 +102,145 @@ body {
   }
 }
 @media (max-width: 600px) {
-  .hero-title {
-    font-size: 2rem;
+  .hero {
+    flex-direction: column;
+    padding: 18px 0;
   }
-  .btn {
-    width: 100%;
-    padding: 14px 0;
+  .hero-content, .hero-image {
+    max-width: 100%;
+    padding: 14px;
+  }
+  .hero-content {
+    text-align: center;
+    padding: 0 8px 18px 8px;
+  }
+  .hero-title {
+    font-size: 1.3rem;
+  }
+  .company-name {
     font-size: 1rem;
+  }
+  .hero-subtitle {
+    font-size: 0.98rem;
+    margin-bottom: 18px;
   }
   .hero-buttons {
     flex-direction: column;
-    gap: 12px;
+    gap: 10px;
     align-items: stretch;
+  }
+  .btn {
+    width: 100%;
+    padding: 12px 0;
+    font-size: 0.98rem;
+  }
+  .hero-image {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  body {
+    font-size: 0.97rem;
+  }
+  .hero-content {
+    padding: 0 4px 12px 4px;
+  }
+  .hero-title {
+    font-size: 1.05rem;
+    line-height: 1.2;
+  }
+  .company-name {
+    font-size: 0.93rem;
+  }
+  .hero-subtitle {
+    font-size: 0.92rem;
+    margin-bottom: 12px;
+  }
+  .btn {
+    font-size: 0.95rem;
+    padding: 10px 0;
+  }
+  .growth-title, .plans-title, .industries-title, .why-choose-title, .solopreneurs-title {
+    font-size: 1.05rem;
+  }
+  .growth-steps, .plans-section, .industries-section, .why-choose-section, .solopreneurs-section {
+    padding: 16px 0 18px 0;
+  }
+  .step-block, .plan-block, .reason-block {
+    padding: 10px 4px 10px 4px;
+    min-height: 0;
+  }
+  .step-number {
+    width: 30px;
+    height: 30px;
+    font-size: 0.95rem;
+  }
+  .step-heading, .plan-type, .plan-name, .reason-title {
+    font-size: 0.95rem;
+  }
+  .step-text, .plan-features, .reason-text, .solopreneurs-points, .industries-desc, .industry-detail-desc, .solopreneurs-subtitle {
+    font-size: 0.91rem;
+  }
+  .industries-list {
+    padding: 8px 4px;
+  }
+  .industries-list-title {
+    font-size: 0.93rem;
+    margin-bottom: 4px;
+  }
+  .industry-item {
+    font-size: 0.91rem;
+    padding: 5px 0 5px 2px;
+  }
+  .industry-detail-vertical img {
+    max-width: 90px;
+    border-radius: 7px;
+  }
+  .industry-detail-title {
+    font-size: 0.93rem;
+    margin-bottom: 4px;
+  }
+  .icon-bg {
+    width: 36px;
+    height: 36px;
+    font-size: 1.1rem;
+  }
+  .reason-icon img {
+    width: 20px !important;
+    height: 20px !important;
+  }
+  .solopreneurs-image img {
+    max-width: 90px;
+    border-radius: 7px;
+  }
+  .site-footer {
+    font-size: 0.93rem;
+    padding: 12px 0 10px 0;
+  }
+}
+@media (max-width: 375px) {
+  .hero-title, .growth-title, .plans-title, .industries-title, .why-choose-title, .solopreneurs-title {
+    font-size: 0.95rem;
+  }
+  .btn {
+    font-size: 0.9rem;
+    padding: 8px 0;
+  }
+  .step-block, .plan-block, .reason-block {
+    padding: 6px 2px 6px 2px;
+  }
+  .icon-bg {
+    width: 28px;
+    height: 28px;
+    font-size: 0.9rem;
+  }
+  .reason-icon img {
+    width: 16px !important;
+    height: 16px !important;
+  }
+  .solopreneurs-image img, .industry-detail-vertical img {
+    max-width: 60px;
+    border-radius: 5px;
   }
 }
 .growth-steps {
@@ -186,6 +313,144 @@ body {
     width: 90%;
     min-width: 0;
     margin-bottom: 0;
+  }
+}
+@media (max-width: 600px) {
+  .growth-steps {
+    padding: 28px 0 32px 0;
+  }
+  .growth-title {
+    font-size: 1.2rem;
+    margin-bottom: 24px;
+  }
+  .steps-container {
+    flex-direction: column;
+    gap: 16px;
+    max-width: 100%;
+  }
+  .step-block {
+    width: 98%;
+    min-width: 0;
+    padding: 18px 8px 14px 8px;
+    min-height: 0;
+  }
+  .step-number {
+    width: 38px;
+    height: 38px;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+  .step-heading {
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+  .step-text {
+    font-size: 0.97rem;
+  }
+}
+@media (max-width: 480px) {
+  body {
+    font-size: 0.97rem;
+  }
+  .hero-content {
+    padding: 0 4px 12px 4px;
+  }
+  .hero-title {
+    font-size: 1.05rem;
+    line-height: 1.2;
+  }
+  .company-name {
+    font-size: 0.93rem;
+  }
+  .hero-subtitle {
+    font-size: 0.92rem;
+    margin-bottom: 12px;
+  }
+  .btn {
+    font-size: 0.95rem;
+    padding: 10px 0;
+  }
+  .growth-title, .plans-title, .industries-title, .why-choose-title, .solopreneurs-title {
+    font-size: 1.05rem;
+  }
+  .growth-steps, .plans-section, .industries-section, .why-choose-section, .solopreneurs-section {
+    padding: 16px 0 18px 0;
+  }
+  .step-block, .plan-block, .reason-block {
+    padding: 10px 4px 10px 4px;
+    min-height: 0;
+  }
+  .step-number {
+    width: 30px;
+    height: 30px;
+    font-size: 0.95rem;
+  }
+  .step-heading, .plan-type, .plan-name, .reason-title {
+    font-size: 0.95rem;
+  }
+  .step-text, .plan-features, .reason-text, .solopreneurs-points, .industries-desc, .industry-detail-desc, .solopreneurs-subtitle {
+    font-size: 0.91rem;
+  }
+  .industries-list {
+    padding: 8px 4px;
+  }
+  .industries-list-title {
+    font-size: 0.93rem;
+    margin-bottom: 4px;
+  }
+  .industry-item {
+    font-size: 0.91rem;
+    padding: 5px 0 5px 2px;
+  }
+  .industry-detail-vertical img {
+    max-width: 90px;
+    border-radius: 7px;
+  }
+  .industry-detail-title {
+    font-size: 0.93rem;
+    margin-bottom: 4px;
+  }
+  .icon-bg {
+    width: 36px;
+    height: 36px;
+    font-size: 1.1rem;
+  }
+  .reason-icon img {
+    width: 20px !important;
+    height: 20px !important;
+  }
+  .solopreneurs-image img {
+    max-width: 90px;
+    border-radius: 7px;
+  }
+  .site-footer {
+    font-size: 0.93rem;
+    padding: 12px 0 10px 0;
+  }
+}
+@media (max-width: 375px) {
+  .hero-title, .growth-title, .plans-title, .industries-title, .why-choose-title, .solopreneurs-title {
+    font-size: 0.95rem;
+  }
+  .btn {
+    font-size: 0.9rem;
+    padding: 8px 0;
+  }
+  .step-block, .plan-block, .reason-block {
+    padding: 6px 2px 6px 2px;
+  }
+  .icon-bg {
+    width: 28px;
+    height: 28px;
+    font-size: 0.9rem;
+  }
+  .reason-icon img {
+    width: 16px !important;
+    height: 16px !important;
+  }
+  .solopreneurs-image img, .industry-detail-vertical img {
+    max-width: 60px;
+    border-radius: 5px;
   }
 }
 .plans-section {
@@ -264,6 +529,148 @@ body {
     width: 90%;
     min-width: 0;
     margin-bottom: 0;
+  }
+}
+@media (max-width: 600px) {
+  .plans-section {
+    padding: 28px 0 32px 0;
+  }
+  .plans-title {
+    font-size: 1.2rem;
+    margin-bottom: 24px;
+  }
+  .plans-container {
+    flex-direction: column;
+    gap: 16px;
+    max-width: 100%;
+  }
+  .plan-block {
+    width: 98%;
+    min-width: 0;
+    padding: 18px 8px 14px 8px;
+    min-height: 0;
+  }
+  .plan-type {
+    font-size: 0.98rem;
+    margin-bottom: 6px;
+  }
+  .plan-name {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  .plan-features {
+    font-size: 0.97rem;
+    margin-bottom: 14px;
+    padding-left: 10px;
+  }
+  .plan-btn {
+    font-size: 0.98rem;
+    padding: 10px 0;
+  }
+}
+@media (max-width: 480px) {
+  body {
+    font-size: 0.97rem;
+  }
+  .hero-content {
+    padding: 0 4px 12px 4px;
+  }
+  .hero-title {
+    font-size: 1.05rem;
+    line-height: 1.2;
+  }
+  .company-name {
+    font-size: 0.93rem;
+  }
+  .hero-subtitle {
+    font-size: 0.92rem;
+    margin-bottom: 12px;
+  }
+  .btn {
+    font-size: 0.95rem;
+    padding: 10px 0;
+  }
+  .growth-title, .plans-title, .industries-title, .why-choose-title, .solopreneurs-title {
+    font-size: 1.05rem;
+  }
+  .growth-steps, .plans-section, .industries-section, .why-choose-section, .solopreneurs-section {
+    padding: 16px 0 18px 0;
+  }
+  .step-block, .plan-block, .reason-block {
+    padding: 10px 4px 10px 4px;
+    min-height: 0;
+  }
+  .step-number {
+    width: 30px;
+    height: 30px;
+    font-size: 0.95rem;
+  }
+  .step-heading, .plan-type, .plan-name, .reason-title {
+    font-size: 0.95rem;
+  }
+  .step-text, .plan-features, .reason-text, .solopreneurs-points, .industries-desc, .industry-detail-desc, .solopreneurs-subtitle {
+    font-size: 0.91rem;
+  }
+  .industries-list {
+    padding: 8px 4px;
+  }
+  .industries-list-title {
+    font-size: 0.93rem;
+    margin-bottom: 4px;
+  }
+  .industry-item {
+    font-size: 0.91rem;
+    padding: 5px 0 5px 2px;
+  }
+  .industry-detail-vertical img {
+    max-width: 90px;
+    border-radius: 7px;
+  }
+  .industry-detail-title {
+    font-size: 0.93rem;
+    margin-bottom: 4px;
+  }
+  .icon-bg {
+    width: 36px;
+    height: 36px;
+    font-size: 1.1rem;
+  }
+  .reason-icon img {
+    width: 20px !important;
+    height: 20px !important;
+  }
+  .solopreneurs-image img {
+    max-width: 90px;
+    border-radius: 7px;
+  }
+  .site-footer {
+    font-size: 0.93rem;
+    padding: 12px 0 10px 0;
+  }
+}
+@media (max-width: 375px) {
+  .hero-title, .growth-title, .plans-title, .industries-title, .why-choose-title, .solopreneurs-title {
+    font-size: 0.95rem;
+  }
+  .btn {
+    font-size: 0.9rem;
+    padding: 8px 0;
+  }
+  .step-block, .plan-block, .reason-block {
+    padding: 6px 2px 6px 2px;
+  }
+  .icon-bg {
+    width: 28px;
+    height: 28px;
+    font-size: 0.9rem;
+  }
+  .reason-icon img {
+    width: 16px !important;
+    height: 16px !important;
+  }
+  .solopreneurs-image img, .industry-detail-vertical img {
+    max-width: 60px;
+    border-radius: 5px;
   }
 }
 .industries-section {
@@ -365,12 +772,14 @@ body {
   flex: 0 1 340px;
   max-width: 340px;
 }
+.industry-detail-title {
+  font-size: 1rem;
+  margin-bottom: 6px;
+  text-align: center;
+}
 .industry-detail-desc {
-  font-size: 0.95rem;
-  color: #444;
-  margin-bottom: 18px;
-  line-height: 1.6;
-  text-align: left;
+  font-size: 0.93rem;
+  text-align: center;
 }
 @media (max-width: 900px) {
   .industry-detail-vertical {
@@ -386,6 +795,160 @@ body {
   .industry-detail-content {
     max-width: 100%;
     flex: 1 1 100%;
+  }
+}
+@media (max-width: 600px) {
+  .industries-section {
+    padding: 28px 0 32px 0;
+  }
+  .industries-title {
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+  }
+  .industries-desc {
+    font-size: 0.97rem;
+    margin-bottom: 18px;
+    padding: 0 4px;
+  }
+  .industries-content {
+    flex-direction: column;
+    gap: 14px;
+    max-width: 100%;
+    text-align: left;
+  }
+  .industries-list {
+    min-width: 0;
+    padding: 12px 8px;
+  }
+  .industries-list-title {
+    font-size: 0.98rem;
+    margin-bottom: 8px;
+  }
+  .industry-item {
+    font-size: 0.97rem;
+    padding: 7px 0 7px 4px;
+  }
+  .industry-details {
+    padding: 14px 6px;
+  }
+  .industry-detail-vertical {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .industry-detail-vertical img {
+    max-width: 140px;
+    min-width: 0;
+    margin-bottom: 8px;
+  }
+  .industry-detail-content {
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+}
+@media (max-width: 480px) {
+  body {
+    font-size: 0.97rem;
+  }
+  .hero-content {
+    padding: 0 4px 12px 4px;
+  }
+  .hero-title {
+    font-size: 1.05rem;
+    line-height: 1.2;
+  }
+  .company-name {
+    font-size: 0.93rem;
+  }
+  .hero-subtitle {
+    font-size: 0.92rem;
+    margin-bottom: 12px;
+  }
+  .btn {
+    font-size: 0.95rem;
+    padding: 10px 0;
+  }
+  .growth-title, .plans-title, .industries-title, .why-choose-title, .solopreneurs-title {
+    font-size: 1.05rem;
+  }
+  .growth-steps, .plans-section, .industries-section, .why-choose-section, .solopreneurs-section {
+    padding: 16px 0 18px 0;
+  }
+  .step-block, .plan-block, .reason-block {
+    padding: 10px 4px 10px 4px;
+    min-height: 0;
+  }
+  .step-number {
+    width: 30px;
+    height: 30px;
+    font-size: 0.95rem;
+  }
+  .step-heading, .plan-type, .plan-name, .reason-title {
+    font-size: 0.95rem;
+  }
+  .step-text, .plan-features, .reason-text, .solopreneurs-points, .industries-desc, .industry-detail-desc, .solopreneurs-subtitle {
+    font-size: 0.91rem;
+  }
+  .industries-list {
+    padding: 8px 4px;
+  }
+  .industries-list-title {
+    font-size: 0.93rem;
+    margin-bottom: 4px;
+  }
+  .industry-item {
+    font-size: 0.91rem;
+    padding: 5px 0 5px 2px;
+  }
+  .industry-detail-vertical img {
+    max-width: 90px;
+    border-radius: 7px;
+  }
+  .industry-detail-title {
+    font-size: 0.93rem;
+    margin-bottom: 4px;
+  }
+  .icon-bg {
+    width: 36px;
+    height: 36px;
+    font-size: 1.1rem;
+  }
+  .reason-icon img {
+    width: 20px !important;
+    height: 20px !important;
+  }
+  .solopreneurs-image img {
+    max-width: 90px;
+    border-radius: 7px;
+  }
+  .site-footer {
+    font-size: 0.93rem;
+    padding: 12px 0 10px 0;
+  }
+}
+@media (max-width: 375px) {
+  .hero-title, .growth-title, .plans-title, .industries-title, .why-choose-title, .solopreneurs-title {
+    font-size: 0.95rem;
+  }
+  .btn {
+    font-size: 0.9rem;
+    padding: 8px 0;
+  }
+  .step-block, .plan-block, .reason-block {
+    padding: 6px 2px 6px 2px;
+  }
+  .icon-bg {
+    width: 28px;
+    height: 28px;
+    font-size: 0.9rem;
+  }
+  .reason-icon img {
+    width: 16px !important;
+    height: 16px !important;
+  }
+  .solopreneurs-image img, .industry-detail-vertical img {
+    max-width: 60px;
+    border-radius: 5px;
   }
 }
 .why-choose-section {
@@ -470,6 +1033,149 @@ body {
     min-width: 0;
   }
 }
+@media (max-width: 600px) {
+  .why-choose-section {
+    padding: 28px 0 32px 0;
+  }
+  .why-choose-title {
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+  }
+  .why-choose-subtitle {
+    font-size: 0.97rem;
+    margin-bottom: 0;
+    padding: 0 4px;
+  }
+  .why-choose-reasons {
+    flex-direction: column;
+    gap: 18px;
+  }
+  .reason-block {
+    width: 98%;
+    min-width: 0;
+    padding: 22px 8px 18px 8px;
+  }
+  .icon-bg {
+    width: 48px;
+    height: 48px;
+    font-size: 1.3rem;
+  }
+  .reason-icon img {
+    width: 28px !important;
+    height: 28px !important;
+  }
+  .reason-title {
+    font-size: 1rem;
+  }
+  .reason-text {
+    font-size: 0.97rem;
+  }
+}
+@media (max-width: 480px) {
+  body {
+    font-size: 0.97rem;
+  }
+  .hero-content {
+    padding: 0 4px 12px 4px;
+  }
+  .hero-title {
+    font-size: 1.05rem;
+    line-height: 1.2;
+  }
+  .company-name {
+    font-size: 0.93rem;
+  }
+  .hero-subtitle {
+    font-size: 0.92rem;
+    margin-bottom: 12px;
+  }
+  .btn {
+    font-size: 0.95rem;
+    padding: 10px 0;
+  }
+  .growth-title, .plans-title, .industries-title, .why-choose-title, .solopreneurs-title {
+    font-size: 1.05rem;
+  }
+  .growth-steps, .plans-section, .industries-section, .why-choose-section, .solopreneurs-section {
+    padding: 16px 0 18px 0;
+  }
+  .step-block, .plan-block, .reason-block {
+    padding: 10px 4px 10px 4px;
+    min-height: 0;
+  }
+  .step-number {
+    width: 30px;
+    height: 30px;
+    font-size: 0.95rem;
+  }
+  .step-heading, .plan-type, .plan-name, .reason-title {
+    font-size: 0.95rem;
+  }
+  .step-text, .plan-features, .reason-text, .solopreneurs-points, .industries-desc, .industry-detail-desc, .solopreneurs-subtitle {
+    font-size: 0.91rem;
+  }
+  .industries-list {
+    padding: 8px 4px;
+  }
+  .industries-list-title {
+    font-size: 0.93rem;
+    margin-bottom: 4px;
+  }
+  .industry-item {
+    font-size: 0.91rem;
+    padding: 5px 0 5px 2px;
+  }
+  .industry-detail-vertical img {
+    max-width: 90px;
+    border-radius: 7px;
+  }
+  .industry-detail-title {
+    font-size: 0.93rem;
+    margin-bottom: 4px;
+  }
+  .icon-bg {
+    width: 36px;
+    height: 36px;
+    font-size: 1.1rem;
+  }
+  .reason-icon img {
+    width: 20px !important;
+    height: 20px !important;
+  }
+  .solopreneurs-image img {
+    max-width: 90px;
+    border-radius: 7px;
+  }
+  .site-footer {
+    font-size: 0.93rem;
+    padding: 12px 0 10px 0;
+  }
+}
+@media (max-width: 375px) {
+  .hero-title, .growth-title, .plans-title, .industries-title, .why-choose-title, .solopreneurs-title {
+    font-size: 0.95rem;
+  }
+  .btn {
+    font-size: 0.9rem;
+    padding: 8px 0;
+  }
+  .step-block, .plan-block, .reason-block {
+    padding: 6px 2px 6px 2px;
+  }
+  .icon-bg {
+    width: 28px;
+    height: 28px;
+    font-size: 0.9rem;
+  }
+  .reason-icon img {
+    width: 16px !important;
+    height: 16px !important;
+  }
+  .solopreneurs-image img, .industry-detail-vertical img {
+    max-width: 60px;
+    border-radius: 5px;
+  }
+}
 .solopreneurs-section {
   background: #fff;
   padding: 56px 0 64px 0;
@@ -537,6 +1243,139 @@ body {
     margin-top: 18px;
   }
 }
+@media (max-width: 600px) {
+  .solopreneurs-section {
+    padding: 28px 0 32px 0;
+  }
+  .solopreneurs-title {
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+  }
+  .solopreneurs-subtitle {
+    font-size: 0.97rem;
+    margin-bottom: 18px;
+    padding: 0 4px;
+  }
+  .solopreneurs-content {
+    flex-direction: column;
+    gap: 18px;
+    max-width: 100%;
+    text-align: left;
+  }
+  .solopreneurs-points {
+    font-size: 0.97rem;
+    gap: 12px;
+  }
+  .solopreneurs-image img {
+    max-width: 160px;
+    border-radius: 10px;
+  }
+}
+@media (max-width: 480px) {
+  body {
+    font-size: 0.97rem;
+  }
+  .hero-content {
+    padding: 0 4px 12px 4px;
+  }
+  .hero-title {
+    font-size: 1.05rem;
+    line-height: 1.2;
+  }
+  .company-name {
+    font-size: 0.93rem;
+  }
+  .hero-subtitle {
+    font-size: 0.92rem;
+    margin-bottom: 12px;
+  }
+  .btn {
+    font-size: 0.95rem;
+    padding: 10px 0;
+  }
+  .growth-title, .plans-title, .industries-title, .why-choose-title, .solopreneurs-title {
+    font-size: 1.05rem;
+  }
+  .growth-steps, .plans-section, .industries-section, .why-choose-section, .solopreneurs-section {
+    padding: 16px 0 18px 0;
+  }
+  .step-block, .plan-block, .reason-block {
+    padding: 10px 4px 10px 4px;
+    min-height: 0;
+  }
+  .step-number {
+    width: 30px;
+    height: 30px;
+    font-size: 0.95rem;
+  }
+  .step-heading, .plan-type, .plan-name, .reason-title {
+    font-size: 0.95rem;
+  }
+  .step-text, .plan-features, .reason-text, .solopreneurs-points, .industries-desc, .industry-detail-desc, .solopreneurs-subtitle {
+    font-size: 0.91rem;
+  }
+  .industries-list {
+    padding: 8px 4px;
+  }
+  .industries-list-title {
+    font-size: 0.93rem;
+    margin-bottom: 4px;
+  }
+  .industry-item {
+    font-size: 0.91rem;
+    padding: 5px 0 5px 2px;
+  }
+  .industry-detail-vertical img {
+    max-width: 90px;
+    border-radius: 7px;
+  }
+  .industry-detail-title {
+    font-size: 0.93rem;
+    margin-bottom: 4px;
+  }
+  .icon-bg {
+    width: 36px;
+    height: 36px;
+    font-size: 1.1rem;
+  }
+  .reason-icon img {
+    width: 20px !important;
+    height: 20px !important;
+  }
+  .solopreneurs-image img {
+    max-width: 90px;
+    border-radius: 7px;
+  }
+  .site-footer {
+    font-size: 0.93rem;
+    padding: 12px 0 10px 0;
+  }
+}
+@media (max-width: 375px) {
+  .hero-title, .growth-title, .plans-title, .industries-title, .why-choose-title, .solopreneurs-title {
+    font-size: 0.95rem;
+  }
+  .btn {
+    font-size: 0.9rem;
+    padding: 8px 0;
+  }
+  .step-block, .plan-block, .reason-block {
+    padding: 6px 2px 6px 2px;
+  }
+  .icon-bg {
+    width: 28px;
+    height: 28px;
+    font-size: 0.9rem;
+  }
+  .reason-icon img {
+    width: 16px !important;
+    height: 16px !important;
+  }
+  .solopreneurs-image img, .industry-detail-vertical img {
+    max-width: 60px;
+    border-radius: 5px;
+  }
+}
 .site-footer {
   background: #2a4d8f;
   color: #fff;
@@ -547,3 +1386,4 @@ body {
   font-weight: 500;
   margin-top: 0;
 }
+
