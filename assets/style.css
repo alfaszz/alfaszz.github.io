@@ -1560,4 +1560,8 @@ body {
   font-weight: 500;
   margin-top: 0;
 }
+/* Add space after solopreneurs-section */
+.solopreneurs-section {
+  margin-bottom: 48px;
+}
 
